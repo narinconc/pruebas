@@ -1,68 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Partes del Computador</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Greetings & Introductions – Speaking Inglés Nivel 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6e9;--ink:#111;--mute:#555044;--card:#fff;--line:#e3d6b0;--oc:#d39b1e;--ocd:#7a5200;--blk:#0d0d0d;--ok:#18794a;--bad:#c2312f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0d0d;--ink:#f6efdc;--mute:#b9b09a;--card:#1a1914;--line:#3a3322;--ocd:#e3b04a;--ok:#4cd391;--bad:#ff7a7a}}
+:root[data-theme="dark"]{--bg:#0d0d0d;--ink:#f6efdc;--mute:#b9b09a;--card:#1a1914;--line:#3a3322;--ocd:#e3b04a;--ok:#4cd391;--bad:#ff7a7a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Lexend,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--blk);color:#f6efdc;border-bottom:6px solid var(--oc)}
+.wrap{max-width:880px;margin:0 auto;padding:0 18px}
+.brand{display:flex;align-items:center;gap:14px;padding:16px 0 0}
+.logo{
+  width:78px !important;
+  height:78px !important;
+  border:2px solid var(--oc) !important;
+  border-radius:10px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  overflow:hidden !important;
+  background:#ffffff !important;
+  padding:5px !important;
+  flex:none !important;
+}
+
+.logo img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  display:block !important;
+  background:#ffffff !important;
+}
+.inst{font-weight:600;color:var(--oc);font-size:15px;min-width:80px}
+h1{font-size:clamp(34px,8vw,60px);line-height:1.05;margin:26px 0 10px;font-weight:800}
+h1 em{font-style:normal;color:var(--oc)}
+.sub{color:#d9d0b8;max-width:54ch;margin:0 0 22px}
+.tools{display:flex;gap:14px;flex-wrap:wrap;align-items:center;padding:0 0 22px;font-size:14px;color:#d9d0b8}
+.tools select{max-width:230px;padding:7px 10px;border-radius:8px;border:1px solid var(--oc);background:#1a1914;color:#f6efdc;font:14px Lexend,sans-serif}
+.tools label{display:flex;gap:6px;align-items:center}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
+nav button{flex:none;font:600 14px Lexend,sans-serif;padding:9px 14px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+nav button[aria-selected="true"]{background:var(--blk);color:var(--oc);border-color:var(--blk)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) nav button[aria-selected="true"]{background:var(--oc);color:#111;border-color:var(--oc)}}
+main{padding-bottom:40px}
+section{display:none;padding-top:26px}
+section.on{display:block}
+h2{font-size:28px;margin:0;font-weight:800}
+.lead{color:var(--mute);margin:6px 0 18px;font-size:16px}
+.cols{display:flex;justify-content:space-between;font-weight:800;font-size:13px;color:var(--ocd);padding:0 14px 6px;border-bottom:2px solid var(--oc);margin-bottom:10px;padding-right:110px}
+.row{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--oc);border-radius:12px;padding:10px 12px 10px 14px;margin:0 0 9px;display:grid;grid-template-columns:1fr auto auto;gap:6px 8px;align-items:center}
+.t b{font-weight:600;font-size:20px;display:block}
+.t span{color:var(--mute);font-size:15px}
+.out{grid-column:1/-1;font-size:15px}
+.ib{width:46px;height:46px;border-radius:50%;border:0;font-size:20px;cursor:pointer;background:var(--oc);color:#111}
+.ib.m{background:var(--blk);color:var(--oc)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ib.m{background:#f6efdc;color:#111}}
+.ib.rec{background:var(--bad);color:#fff;animation:p 1s infinite}
+@keyframes p{50%{transform:scale(1.12)}}
+button:focus-visible,select:focus-visible,[contenteditable]:focus-visible{outline:3px solid var(--oc);outline-offset:2px}
+.w{display:inline-block;padding:1px 8px;margin:2px 3px 2px 0;border-radius:8px;font-weight:600}
+.w.ok{background:color-mix(in srgb,var(--ok) 20%,transparent);color:var(--ok)}
+.w.no{background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)}
+.how{background:var(--blk);color:#f6efdc;border-radius:14px;padding:14px 18px;margin:0 0 22px;font-size:15px;border-left:6px solid var(--oc)}
+.how b{color:var(--oc)}
+.cta{padding:12px 22px;border-radius:999px;border:0;background:var(--oc);color:#111;font:600 16px Lexend,sans-serif;cursor:pointer;margin-bottom:14px}
+.big .t b{font-size:26px}
+footer{background:var(--blk);color:#d9d0b8;border-top:6px solid var(--oc);font-size:14px}
+footer .wrap{padding-top:24px;padding-bottom:28px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+footer h3{margin:0 0 6px;font-size:15px;color:var(--oc)}
+[contenteditable]{display:block;min-height:1.5em;border-bottom:1px dashed #6b5a2a;padding:2px 0;color:#f6efdc}
+[contenteditable]:empty:before{content:attr(data-ph);color:#8a7d58}
+@media (prefers-reduced-motion:reduce){.ib.rec{animation:none}}
+</style>
 </head>
+<body>
+<header>
+  <div class="wrap">
 
-<body style="margin:0; min-height:100vh; display:flex; flex-direction:column; font-family:Arial;">
+    <div class="brand">
+      <div class="logo" aria-label="Logo Licenciatura en Tecnología">
+        <img src="logo lictec.png" alt="Licenciatura en Tecnología">
+      </div>
 
-    <!-- HEADER -->
-    <div style="background-color:lightblue; color:blue; text-align:center; padding:20px;">
-        <h1>💻 Partes del Computador</h1>
-        <p style="font-size:20px;color:blue";><strong>Aprende los componentes básicos</strong></stronG></p>
+      <div class="inst">
+        Licenciatura en Tecnología<br>
+        Seccional Duitama
+      </div>
     </div>
 
-    <!-- MENU -->
-    <div style="background-color:#bdc3c7; text-align:center; padding:10px;">
-        <div style="display:inline-block; margin:10px;color:blue">Profundizar</div>
-       <div style="display:inline-block; margin:10px;color:blue">Actividad</div>
-        <div style="display:inline-block; margin:10px;color:blue">Contacto</div>
+    <h1>Greetings &amp; <em>Introductions</em></h1>
+
+    <p class="sub">
+      Habla inglés desde el primer día: escucha cada frase con voz clara,
+      repítela y practica con el micrófono. Nivel 1.
+    </p>
+
+    <div class="tools">
+      <label>
+        Voz
+        <select id="voice" aria-label="Elegir voz"></select>
+      </label>
+
+      <label>
+        <input type="checkbox" id="slow">
+        Hablar despacio
+      </label>
     </div>
 
-    <!-- CONTENIDO -->
-    <div style="background-color:#ecf0f1; padding:20px; text-align:center;">
+  </div>
+</header>
 
-        <h2>🛜 Componentes del PC hhhhh🛜</h2>
+<nav role="tablist" aria-label="Secciones"><div class="wrap" id="tabs"></div></nav>header
 
-        <!-- FILA -->
-        <div>
+<main class="wrap">
+  <div id="secs"></div>
+</main>
 
-            <!-- CON HIPERVÍNCULO -->
-            <div style="display:inline-block; margin:15px;">
-                <a href="monitor.html">
-                    <img src="https://1.bp.blogspot.com/-h4d08u87u4o/V5db_Mu-DRI/AAAAAAAAAAo/fSudjygAswco7-Kt2I6H0PKih-epWZoFwCEw/s1600/benq-bl3201pt-32-inch-uhd-monitor-review-485155-2.jpg" width="250"
-                    style="border-radius:10px; box-shadow:5px 5px 15px gray;">
-                    <p style="color:black;">Monitor</p>
-                </a>
-            </div>
+<footer>
+  <div class="wrap">
 
-            <!-- SIN HIPERVÍNCULO -->
-            <div style="display:inline-block; margin:15px;">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.1C2Yu5l-t7gfpeHjjfoqogHaDg?pid=Api&P=0&h=180" width="250"
-                style="border-radius:10px; box-shadow:5px 5px 15px gray;">
-                <p>Teclado</p>
-            </div>
-
-            <div style="display:inline-block; margin:15px;">
-                <img src="https://3.bp.blogspot.com/-f_vwKA-Ppm4/T0T5sn_vqHI/AAAAAAAAACI/vxGHEBQGwrY/s1600/mause.jpg" width="250"
-                style="border-radius:10px; box-shadow:5px 5px 15px gray;">
-                <p>Mouse</p>
-            </div>
-
-            <div style="display:inline-block; margin:15px;">
-                <img src="https://tse2.mm.bing.net/th/id/OIP.4-s-9J9obbp-w_KcYwXoTAAAAA?pid=Api&P=0&h=180" width="250"
-                style="border-radius:10px; box-shadow:5px 5px 15px gray;">
-                <p>CPU</p>
-            </div>
-
-        </div>
+    <div>
+      <h3>Créditos</h3>
+      <div><strong>Elaborado por:</strong> Licenciada en Idiomas</div>
+      <div><strong>Programa:</strong> Licenciatura en Tecnología</div>
+      <div><strong>Sede:</strong> Seccional Duitama</div>
     </div>
 
-    <!-- FOOTER -->
-    <div style="background-color:#2c3e50; color:white; text-align:center; padding:10px; margin-top:auto;">
-        <p>📀 &copy Licencia Creative Commons - Creada por Rincón & Cia. 2026📀</p>
+    <div>
+      <h3>Institución</h3>
+      <div>Universidad Pedagógica y Tecnológica de Colombia – UPTC</div>
+      <div>Duitama, Boyacá – Colombia</div>
+      <div>2026</div>
     </div>
 
+    <div>
+      <h3>Recurso educativo</h3>
+      <div>Greetings &amp; Introductions</div>
+      <div>Speaking – Inglés Nivel 1</div>
+      <div>Recurso Educativo Digital</div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const DATA=[
+["👋 Saludos básicos","Saludos básicos",`Hello!|¡Hola!
+Hi!|¡Hola!
+Good morning!|¡Buenos días!
+Good afternoon!|¡Buenas tardes!
+Good evening!|¡Buenas noches! / Buenas tardes-noches
+How are you?|¿Cómo estás?
+How are you doing?|¿Cómo estás?
+How's it going?|¿Cómo te va?
+I'm fine, thank you.|Estoy bien, gracias.
+I'm good, thanks.|Estoy bien, gracias.
+I'm great!|¡Estoy muy bien!
+Nice to meet you.|Mucho gusto.
+Nice to meet you, too.|Mucho gusto también.`],
+["🙋 Presentarse","Presentarse",`My name is Nancy.|Mi nombre es Nancy.
+I'm Nancy.|Soy Nancy.
+What's your name?|¿Cómo te llamas?
+What is your name?|¿Cuál es tu nombre?
+My name is…|Mi nombre es…
+I'm from Colombia.|Soy de Colombia.
+Where are you from?|¿De dónde eres?
+I'm Colombian.|Soy colombiano/a.
+I live in Duitama.|Vivo en Duitama.
+Where do you live?|¿Dónde vives?`],
+["🎓 Información personal","Información personal básica",`I'm a student.|Soy estudiante.
+I'm a teacher.|Soy profesor/a.
+I'm 18 years old.|Tengo 18 años.
+How old are you?|¿Cuántos años tienes?
+I'm from Colombia.|Soy de Colombia.
+I live in Colombia.|Vivo en Colombia.
+I study at…|Estudio en…
+I study technology.|Estudio tecnología.
+I like music.|Me gusta la música.
+I like soccer.|Me gusta el fútbol.
+I like video games.|Me gustan los videojuegos.`],
+["🤝 Conversación","Para iniciar una conversación",`What's your name?|¿Cómo te llamas?
+Where are you from?|¿De dónde eres?
+Where do you live?|¿Dónde vives?
+How old are you?|¿Cuántos años tienes?
+What do you do?|¿A qué te dedicas?
+What do you like?|¿Qué te gusta?
+Do you like music?|¿Te gusta la música?
+Do you like soccer?|¿Te gusta el fútbol?`],
+["👋 Despedidas","Despedidas",`Goodbye!|¡Adiós!
+Bye!|¡Chao!
+See you!|¡Nos vemos!
+See you later!|¡Hasta luego!
+See you soon!|¡Hasta pronto!
+Have a nice day!|¡Que tengas un buen día!
+Have a good day!|¡Que tengas un buen día!
+Take care!|¡Cuídate!`]
+];
+
+/* ---------- Voz: elige la mejor voz en inglés disponible ---------- */
+let voices=[],chosen=null;
+function score(v){let s=0;const n=v.name;
+  if(/natural|neural|online/i.test(n))s+=6;
+  if(/google us english/i.test(n))s+=5;
+  if(/samantha|ava|allison|aria|jenny|guy|zira|serena|karen/i.test(n))s+=3;
+  if(/^en[-_]US/i.test(v.lang))s+=2;else if(/^en[-_]GB/i.test(v.lang))s+=1;
+  return s}
+function loadVoices(){
+  if(!('speechSynthesis' in window))return;
+  voices=speechSynthesis.getVoices().filter(v=>/^en/i.test(v.lang));
+  const sel=$('#voice');if(!voices.length){sel.innerHTML='<option>Voz del dispositivo</option>';return}
+  voices.sort((a,b)=>score(b)-score(a));
+  sel.innerHTML='';voices.forEach((v,i)=>{const o=document.createElement('option');o.value=i;o.textContent=v.name+' ('+v.lang+')';sel.appendChild(o)});
+  chosen=voices[0];
+}
+if('speechSynthesis' in window){loadVoices();speechSynthesis.onvoiceschanged=loadVoices}
+$('#voice').onchange=e=>{chosen=voices[+e.target.value]||null;speak("Hello! Nice to meet you.")};
+function utter(t){const u=new SpeechSynthesisUtterance(t);u.lang=chosen?chosen.lang:'en-US';if(chosen)u.voice=chosen;u.rate=$('#slow').checked?0.6:0.82;u.pitch=1;return u}
+function speak(t){
+  if(!('speechSynthesis' in window)){alert('Tu navegador no puede reproducir voz. Prueba con Chrome, Edge o Safari.');return}
+  speechSynthesis.cancel();speechSynthesis.speak(utter(t));
+}
+
+/* ---------- Reconocimiento de voz ---------- */
+const norm=s=>s.toLowerCase().replace(/[’]/g,"'").replace(/[^a-z' ]/g,' ').split(/\s+/).filter(Boolean);
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+function listen(target,out,btn){
+  if(!SR){out.textContent='Este navegador no tiene reconocimiento de voz. Usa Chrome o Edge, o repite en voz alta después del audio.';return}
+  let r;try{r=new SR()}catch(e){out.textContent='No se pudo iniciar el micrófono.';return}
+  r.lang='en-US';r.interimResults=false;r.maxAlternatives=3;
+  btn.classList.add('rec');out.textContent='Te escucho… habla ahora.';
+  r.onresult=e=>{
+    const tw=norm(target);let best=null;
+    for(let k=0;k<e.results[0].length;k++){
+      const pool=norm(e.results[0][k].transcript);let hit=0;const marks=[];
+      tw.forEach(w=>{const i=pool.indexOf(w);if(i>-1){pool.splice(i,1);hit++;marks.push(1)}else marks.push(0)});
+      if(!best||hit>best.hit)best={hit,marks}}
+    out.innerHTML='';
+    tw.forEach((w,i)=>{const sp=document.createElement('span');sp.className='w '+(best.marks[i]?'ok':'no');sp.textContent=w;out.appendChild(sp)});
+    const p=Math.round(best.hit/tw.length*100),m=document.createElement('div');
+    m.textContent=p>=85?'¡Excelente! '+p+' %':p>=50?'Casi lo logras: '+p+' %. Escucha de nuevo y repite las palabras en rojo.':p+' %. Escucha la frase con 🔊 y vuelve a intentar.';
+    out.appendChild(m)};
+  r.onerror=e=>{out.textContent=e.error==='not-allowed'?'Permite el micrófono en tu navegador y vuelve a intentar.':'No te escuché. Acércate al micrófono e intenta otra vez.'};
+  r.onend=()=>btn.classList.remove('rec');
+  try{r.start()}catch(e){btn.classList.remove('rec')}
+}
+function row(en,es){
+  const d=document.createElement('div');d.className='row';
+  const t=document.createElement('div');t.className='t';
+  const b=document.createElement('b');b.textContent=en;
+  const s=document.createElement('span');s.textContent=es;t.append(b,s);
+  const l=document.createElement('button');l.className='ib';l.textContent='🔊';l.setAttribute('aria-label','Escuchar: '+en);
+  const m=document.createElement('button');m.className='ib m';m.textContent='🎤';m.setAttribute('aria-label','Practicar: '+en);
+  const o=document.createElement('div');o.className='out';o.setAttribute('aria-live','polite');
+  l.onclick=()=>speak(en);m.onclick=()=>listen(en,o,m);
+  d.append(t,l,m,o);return d;
+}
+
+/* ---------- Construir secciones ---------- */
+const tabs=$('#tabs'),secs=$('#secs'),all=[];
+function addTab(id,label){const b=document.createElement('button');b.setAttribute('role','tab');b.textContent=label;b.dataset.t=id;b.setAttribute('aria-selected',tabs.children.length===0);tabs.appendChild(b)}
+DATA.forEach(([tab,title,txt],i)=>{
+  const id='s'+i;addTab(id,tab);
+  const s=document.createElement('section');s.id=id;if(i===0)s.className='on';
+  s.innerHTML='<h2></h2><p class="lead">Escucha 🔊, repite en voz alta y practica con el micrófono 🎤.</p><div class="cols"><span>English</span><span>Español</span></div>';
+  s.querySelector('h2').textContent=tab.replace(/^\S+\s/,'')===title?title:title;
+  if(i===0){const h=document.createElement('div');h.className='how';h.innerHTML='<b>Cómo usar esta página:</b> 1) Toca 🔊 y escucha. 2) Repite en voz alta. 3) Toca 🎤 y di la frase. Las palabras en verde las dijiste bien; las rojas, repítelas.';s.insertBefore(h,s.querySelector('.cols'))}
+  txt.split('\n').forEach(line=>{const [en,es]=line.split('|');all.push([en,es]);s.appendChild(row(en,es))});
+  secs.appendChild(s);
+});
+/* Reto */
+addTab('sR','🎯 Reto');
+const R=document.createElement('section');R.id='sR';
+R.innerHTML='<h2>Reto de speaking</h2><p class="lead">Te damos una frase al azar. Escúchala, dila y consigue 85 % o más.</p><button class="cta" id="next">🎲 Otra frase</button><div id="chal" class="big"></div>';
+secs.appendChild(R);
+function newChal(){const [en,es]=all[Math.floor(Math.random()*all.length)];const c=$('#chal');c.innerHTML='';c.appendChild(row(en,es))}
+$('#next').onclick=newChal;newChal();
+
+tabs.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+  tabs.querySelectorAll('button').forEach(x=>x.setAttribute('aria-selected',x===b));
+  document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===b.dataset.t));
+  speechSynthesis&&speechSynthesis.cancel();
+  window.scrollTo({top:document.querySelector('nav').offsetTop,behavior:'smooth'});
+});
+
+/* ---------- Logo y créditos editables (se guardan en este navegador) ---------- */
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+$('#logoBtn').onclick=()=>$('#logoIn').click();
+function setLogo(src){const i=new Image();i.alt='Logo de la institución';i.src=src;$('#logoBtn').innerHTML='';$('#logoBtn').appendChild(i)}
+$('#logoIn').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{setLogo(r.result);ls('logo',r.result)};r.readAsDataURL(f)};
+const sv=ls('logo');if(sv)setLogo(sv);
+['inst','c1','c2','c3','c4'].forEach(id=>{const el=$('#'+id),v=ls(id);if(v)el.textContent=v;el.oninput=()=>ls(id,el.textContent)});
+</script>
 </body>
 </html>
